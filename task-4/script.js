@@ -1,9 +1,5 @@
-function makeNegative(num) {
-    if(num > 0) {
-        return num * -1;
-    } else if (num <= 0) {
-        return num;
-    }
+function greet(name){
+    return `Hello, ${name} how are you doing today?`;
 }
 
-console.log(makeNegative(0));
+console.log(greet('Evan'));
