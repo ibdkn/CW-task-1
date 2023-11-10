@@ -1,9 +1,11 @@
-// Create a class Ghost
-//
-// Ghost objects are instantiated without any arguments.
-//
-// Ghost objects are given a random color attribute of "white" or "yellow" or "purple" or "red" when instantiated
+// Given an array of integers your solution should find the smallest integer.
 
-var Ghost = function() {
-    // your code goes here
-};
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+        let result = Math.min(...args);
+        return result;
+    }
+}
+
+
+
