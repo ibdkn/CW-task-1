@@ -1,7 +1,37 @@
-// Make a function that will return a greeting statement that uses an input; your program should return,
-// "Hello, <name> how are you doing today?".
-function greet(name){
-    return `Hello, ${name} how are you doing today?`;
+// The function is not returning the correct values. Can you figure out why?
+
+function getPlanetName(id){
+    var name;
+    switch(id){
+        case 1:
+            name = 'Mercury';
+            break;
+        case 2:
+            name = 'Venus';
+            break;
+        case 3:
+            name = 'Earth';
+            break;
+        case 4:
+            name = 'Mars';
+            break;
+        case 5:
+            name = 'Jupiter';
+            break;
+        case 6:
+            name = 'Saturn';
+            break;
+        case 7:
+            name = 'Uranus';
+            break;
+        case 8:
+            name = 'Neptune';
+            break;
+        default:
+            return 'Unable to determine the name of the planet'
+    }
+
+    return name;
 }
 
-console.log(greet('Evan'));
+console.log(getPlanetName(6));
