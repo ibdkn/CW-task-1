@@ -13,13 +13,13 @@
 // SOLUTION
 
 function digitalRoot(number) {
-    let array = number.toString().split('');
-    while(array.length >= 2) {
-        return  array.reduce((acc, num) => {
-            let n = acc + +num;
-        }, 0);
+    number = eval(number.toString().split('').join('+'));
+
+    if (number > 9) {
+        return digitalRoot(number);
     }
-    console.log(numb)
+
+    return number;
 }
 
 console.log(digitalRoot(942));
