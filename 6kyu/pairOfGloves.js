@@ -11,5 +11,7 @@
 
 // SOLUTION
 function numberOfPairs(gloves) {
-    //My hands are freezing
+    gloves.filter()
 }
+
+console.log(numberOfPairs(['gray','black','purple','purple','gray','black']));
