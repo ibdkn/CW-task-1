@@ -11,7 +11,28 @@
 
 // SOLUTION
 function numberOfPairs(gloves) {
-    gloves.filter()
+    let obj = {};
+    let sum = 0;
+    obj = gloves.reduce((acc, el) => {
+        acc[el] = (acc[el] || 0) + 1;
+        return acc;
+    }, {});
+    return Object.values(obj).reduce((acc, current) => acc + parseInt(current / 2), 0);
+
+    // let count = 0;
+    // const arr = [...gloves];
+    //
+    // for (let i = 0; i < gloves.length; i++) {
+    //     if (arr.length > 1) {
+    //         const glove = arr.shift();
+    //         const hasPair = arr.indexOf(glove);
+    //         if (hasPair !== -1) {
+    //             count++;
+    //             arr.splice(hasPair, 1)
+    //         }
+    //     }
+    // }
+    // return count;
 }
 
-console.log(numberOfPairs(['gray','black','purple','purple','gray','black']));
+console.log(numberOfPairs(["red", "green", "red", "blue", "blue", "yellow", "yellow"]));
