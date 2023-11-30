@@ -13,7 +13,7 @@
 
 // SOLUTION
 function findMissingLetter(array) {
-    return ' ';
+
 }
 
 console.log(findMissingLetter(['a','b','c','d','f']));

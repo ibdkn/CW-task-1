@@ -8,7 +8,7 @@
 
 // SOLUTION
 function expandedForm(num) {
-    // Your code here
+
 }
 
 console.log(expandedForm(70304));
